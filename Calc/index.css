@@ -1,0 +1,31 @@
+.grid-box{
+    width: 30%;
+    display: grid;
+    grid-template-areas: 
+    "input input input input"
+    "clean kopaytirish bolish back"
+    "seven eight nine ayirish"
+    "four five six qoshish"
+    "one two three qoshish"
+    "zero zero barobar barobar";
+    grid-gap: 5px;
+}
+input{grid-area:input;height: 25px;}
+button{padding: 5px 0;}
+#zero{grid-area: zero;}
+#one{grid-area: one;}
+#two{grid-area:two;}
+#three{grid-area:three;}
+#four{grid-area:four;}
+#five{grid-area:five;}
+#six{grid-area:six;}
+#seven{grid-area:seven;}
+#eight{grid-area:eight;}
+#nine{grid-area:nine;}
+#clean{grid-area: clean;}
+#kopaytirish{grid-area:kopaytirish;}
+#bolish{grid-area:bolish;}
+#back{grid-area:back;}
+#ayirish{grid-area:ayirish;}
+#qoshish{grid-area:qoshish;}
+#barobar{grid-area:barobar;}

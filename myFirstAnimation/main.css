@@ -1,0 +1,152 @@
+.first-homework{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#first{
+    width: 20px;
+    height: 20px;
+    background-color: #b3c4c4;
+    animation-name: first;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function:step-start;
+}
+#second{
+    animation-timing-function:step-start;
+    width: 20px;
+    height: 20px;
+    background-color:#caeded;
+    animation-name: second;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+#third{
+    animation-timing-function:step-start;
+    width: 20px;
+    height: 20px;
+    background-color:#494d4d;
+    animation-name: third;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+#fourth{
+    animation-timing-function:step-start;
+    width: 20px;
+    height: 20px;
+    background-color:#fff;
+    animation-name: fourth;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+}
+@keyframes second{
+    0%{
+        background-color: #caeded;
+    }
+    25%{
+        background-color: #b3c4c4;
+    }
+    50%{
+        background-color: #494d4d;
+    }
+    75%{
+        background-color: #fff;
+    }
+    100%{
+        background-color: #caeded;
+    }
+}
+@keyframes first{
+    0%{
+        background-color: #b3c4c4;
+    }
+    25%{
+        background-color: #494d4d;
+    }
+    50%{
+        background-color: #fff;
+    }
+    75%{
+        background-color: #caeded;
+    }
+    100%{
+        background-color: #b3c4c4;
+    }
+}
+@keyframes third{
+    0%{
+        background-color: #494d4d;
+    }
+    25%{
+        background-color: #fff;
+    }
+    50%{
+        background-color: #caeded;
+    }
+    75%{
+        background-color: #b3c4c4;
+    }
+    100%{
+        background-color: #494d4d;
+    }
+}
+@keyframes fourth{
+    0%{
+        background-color: #fff;
+    }
+    25%{
+        background-color: #caeded;
+    }
+    50%{
+        background-color: #b3c4c4;
+    }
+    75%{
+        background-color: #494d4d;
+    }
+    100%{
+        background-color: #fff;
+    }
+}
+
+.second-homework{
+    padding-left:150px;
+}
+
+.second-homework div{
+    border-radius: 180px;
+}
+#first-circle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background:
+        linear-gradient(150deg, transparent 50%, #cfd1d1 50%),
+        linear-gradient(50deg, #cfd1d1 50%, transparent 50%);
+    background-color:#f7945e;
+    width: 180px;
+    height: 180px;
+    top: 200px;
+    left: 200px;
+    animation-name: circle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+#second-circle{
+    top: 220px;
+    left: 220px;
+    width: 140px;
+    height: 140px;
+    background-color: white;
+}
+
+@keyframes circle{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

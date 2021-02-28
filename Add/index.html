@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="row">
+        <div class="col-4">
+            <div class="card" id="card1">
+                <div class="card-header">
+                    <h1>menu</h1>
+                </div>
+                <button id="add-student" onclick="add(0)">+add</button>
+                <div class="card-main" id="main1">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
+                        <input id="firstName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Soname</span>
+                        <input id="soName" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                      </div>
+                    <button onclick="add(1)">next</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card" id="card2">
+                <div class="card-header">
+                    <h1>Kurs</h1>
+                </div>
+                <div class="card-main" id="main2">
+                    <select id="mySelect">
+                        <option value="html">HTML+CSS</option>
+                        <option value="js">JavaScript</option>
+                        <option value="php">PHP</option>
+                        <option value="python">Python</option>
+
+                    </select>
+                    <button onclick="add(2)">next</button>
+                    <button onclick="add(3)">back</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4">
+            <div class="card" id="card3">
+                <div class="card-header">
+                    <h1>menu</h1>
+                </div>
+                <div class="card-main" id="main3">
+                    <p class="d-inline-block">To'lov amalga oshirilgan</p>
+                    <input id="tolov" type="checkbox">
+                    <button onclick="add(5)">add</button>
+                    <button onclick="add(4)">back</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <table class="table" id="table-students1">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Kurs</th>
+            <th scope="col">group</th>
+          </tr>
+        </thead>
+        <tbody id="students-html">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table" id="table-students2">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Kurs</th>
+            <th scope="col">group</th>
+          </tr>
+        </thead>
+        <tbody id="students-js">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table" id="table-students3">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Kurs</th>
+            <th scope="col">group</th>
+          </tr>
+        </thead>
+        <tbody id="students-php">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table" id="table-students4">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">FirstName</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Kurs</th>
+            <th scope="col">group</th>
+          </tr>
+        </thead>
+        <tbody id="students-python">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+
+    
+
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/src/popover.js"></script> 
+    <script src="index.js"></script>
+</body>
+</html>

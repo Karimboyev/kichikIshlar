@@ -1,0 +1,146 @@
+h1,p{
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    padding-top: 50px;
+}
+.card{
+    font-family: sans-serif;
+    margin:0 auto;
+    width: 440px;
+    border-radius:10px;
+    /*box-sizing: border-box;*/
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);    /*shu qatorni ko'chirdim*/
+}
+.header{
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #f7d9d7;
+}
+.header p{
+    color: #606770;
+    font-size: 15px;
+}
+.header img{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.main{
+    padding: 10px;
+}
+form input{
+    font-size: 15px;
+}
+.name{
+    display: inline-block;
+    margin-right: 10px;
+}
+.name input{
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #d5d8dc;
+    background-color: #f5f6f7;
+}
+.soname{
+    display: inline-block;
+
+}
+.soname input{
+    box-sizing: border-box;
+    width: 200px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #d5d8dc;
+    background-color: #f5f6f7;
+}
+.email{
+    margin-top: 10px;
+    display: inline-block;
+}
+.email input{
+    box-sizing: border-box;
+    width: 414px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #d5d8dc;
+    background-color: #f5f6f7;
+}
+.password{
+    margin: 10px 0;
+    display: inline-block;
+}
+.password input{
+    box-sizing: border-box;
+    width: 414px;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #d5d8dc;
+    background-color: #f5f6f7;
+}
+.brithdate label{
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    color: #606770;
+    margin-top: 10px;
+}
+.brithdate select{
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+}
+#brithdate{
+    margin: 0 5px 0 5px;
+}
+.checkbox div{
+    display: inline-block;
+    border: 1px solid #d5d8dc;
+    width: 120px;
+    height: 25px;
+    padding: 6px 4px 0 4px;
+    border-radius: 4px;
+}
+#box{
+    margin: 0 5px;
+}
+
+
+#first-label{
+    margin-top: 10px;
+    font-size: 12px;
+    display: block;
+    text-align: left;
+    color: #606770;
+}
+.brithdate label:after{
+    content:"";
+    background-image:
+}
+form p{
+    margin: 10px 0;
+    font-size: 11px;
+    color: #777;
+    text-align: left;
+}
+form button{
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #00a400;
+    border-radius: 8px;
+    width: 190px;
+    height: 37px;
+    margin-bottom: 20px;
+    background-color: #00a400;
+    color: #fff;
+}

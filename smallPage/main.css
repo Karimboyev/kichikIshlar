@@ -1,0 +1,188 @@
+body,h1,h2,h3,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+header{
+    background-color: rgba(0,0,0,0.8);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header .container ul li{
+    height: 10px;
+    display: none;
+}
+header .container h1,h3{
+    position: relative;
+    display: inline-block;
+    color: #fff;;
+    cursor: pointer;
+}
+header .container{
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header .container h3:before{
+    content: "";
+    width: 100%;
+    transform: scale(0);
+    border-bottom: 1px solid #fff;
+}
+header .container h3:hover:before{
+    position: absolute;
+    transform: scale(1);
+    transition: 0.7s;
+    width: 100%;
+    bottom: -5px;
+    border-bottom: 1px solid #fff;
+}
+header .container h3:hover{
+    color: #75f075;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+main{
+    padding-top: 50px;
+    background-image: url(images/pexels-hakan-tahmaz-2536643.jpg);
+    background-size: cover;
+    height: 1000px;
+}
+main .container{
+    background-color: rgba(0,0,0,0.63);
+    padding: 30px 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col{
+    box-sizing: border-box;
+    width: 33%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+main .container>h1{
+    color: #fff;
+    margin-left: 20px;
+}
+main .container>h1:hover{
+    color: #75f075;
+    cursor: pointer;
+}
+
+.card{
+    font-family: sans-serif;
+    padding: 15px 10px;
+    background-color: #fff;
+    padding-bottom: 40px;
+    border-radius: 4px;
+    position: relative;
+/*    height: 250px;*/
+}
+.card:hover{
+    cursor: pointer;
+    -webkit-box-shadow: 0px 11px 20px 2px rgba(255,255,255,0.61);
+    box-shadow: 0px 11px 20px 2px rgba(255,255,255,0.61);
+
+}
+.card div{
+    border-bottom: 1px solid #bed7fa;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.card p{
+    margin-bottom: 15px;
+}
+.card button{
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    padding: 7px 30px;
+    border-radius: 3px;
+    background-color: #8eed7b;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1600px) and (min-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+}
+
+@media (max-width: 992px) and (min-width: 888px) {
+
+}
+
+@media (max-width: 888px) and (min-width: 576px) {
+    .col{
+    box-sizing: border-box;
+    width: 45%;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 400px) {
+    .col{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    header .container ul li{
+        display: list-item;
+    }
+    header .container h3{
+        display: none;
+    }
+
+
+    header .container ul:active{
+
+    }
+
+}
